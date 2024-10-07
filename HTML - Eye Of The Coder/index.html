@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <!-- BODY -->
+  <body>
+    <h1><u>HTML WEBPAGE</u></h1>
+
+    <!-- HEADINGS -->
+    <div class="header">
+      <h2><u>HEADINGS</u></h2>
+      <h1>Heading Tag 1</h1>
+      <h2>Heading Tag 2</h2>
+      <h3>Heading Tag 3</h3>
+      <h4>Heading Tag 4</h4>
+      <h5>Heading Tag 5</h5>
+      <h6>Heading Tag 6</h6>
+    </div>
+    <hr />
+
+    <!-- TEXT -->
+    <div class="content" id="text">
+      <h2><u>TEXT</u></h2>
+      <p>
+        <b>Lorem ipsum</b> <strong>dolor sit amet </strong>consectetur
+        adipisicing elit. Libero suscipit ex necessitatibus labore repellat
+        minus natus omnis <i>pariatur consequuntur</i>tempore, id inventore
+        consectetur, doloribus <em>officia</em> reprehenderit, accusantium odio
+        quam tenetur!
+      </p>
+      <u>Underlined Text</u>
+      <s>Strikethrough Text</s>
+      <pre>
+      This is preformatted
+      text.      Lots of spaces before.   More spaces.
+      New line break.
+    </pre
+      >
+      <mark>Highlighted Text</mark>
+    </div>
+    <hr />
+
+    <!-- LISTS -->
+    <h2><u>LISTS</u></h2>
+    <ol start="1">
+      <li>Morning</li>
+      <li>Afternoon</li>
+      <li>Night</li>
+    </ol>
+
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+
+    <dl>
+      <dt>HTML</dt>
+      <dd>Hyper Text Markup Language</dd>
+    </dl>
+    <hr />
+
+    <!-- ENTITIES -->
+    <h2><u>ENTITIES</u></h2>
+    <p>&lt;</p>
+    <p>&gt;</p>
+    <p>&amp;</p>
+    <p>&quot;</p>
+    <p>&apos;</p>
+
+    <p>5 &lt; 10 &amp; 15 &gt; 10</p>
+
+    <p>&euro;</p>
+    <p>&yen;</p>
+    <p>&cent;</p>
+
+    <p>
+      Lemurs &nbsp; &nbsp; are primates found exclusively in the isolated island
+      of Madagascar.
+    </p>
+
+    <p>
+      Lemurs are primates found exclusively in the isolated island of
+      Madagascar&hellip;
+    </p>
+
+    <p>&#169;</p>
+    <p>&#x00a9;</p>
+    <hr />
+
+    <!-- LINKS -->
+    <h2><u>LINKS</u></h2>
+    <a href="https://google.com">Google</a>
+
+    <a href="/index.html">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+
+    <a href="#text">Go to Text</a>
+
+    <a href="mailto:example@gmail.com">Email</a>
+    <a href="tel:1234567890">Phone</a>
+
+    <a href="utils/example.txt" download>Download Text File</a>
+
+    <a target="_blank" href="about.html">Target</a>
+    <hr />
+
+    <!-- IMAGES -->
+    <h2><u>IMAGES</u></h2>
+    <img
+      src="images/cat-programmer.jpg"
+      srcset="
+        images/small.jpg   400w,
+        images/medium.jpg  800w,
+        images/large.jpg  1200w
+      "
+      sizes="(max-width: 600px) 100vw, (max-width=1200px) 50vw, 33vw"
+      alt="cat on computer"
+      title="cat programmer"
+      loading="lazy"
+    />
+    <img
+      src="https://www.kevinwanke.com/wp-content/uploads/2021/06/marcel-friedrich-XC_28Kk25F0-unsplash.jpg"
+      width="500"
+      height="500"
+      loading="lazy"
+    />
+    <hr />
+
+    <!-- VIDEOS -->
+    <h2><u>VIDEOS</u></h2>
+    <h3>Video 1</h3>
+    <video
+      src="./guy-doing-html.mp4"
+      width="450"
+      height="250"
+      controls
+      autoplay
+      loop
+      muted
+      poster="./images/large.jpg"
+    >
+      Guy doing HTML
+    </video>
+
+    <h3>Video 2</h3>
+    <video controls width="450" height="250" id="myVideo">
+      <source src="videos/guy-doing-html.mp4" type="video/mp4" />
+      <source src="videos/guy-doing-html.webm" type="video/webm" />
+      <source src="videos/guy-doing-html.ogg" type="video/ogg" />
+      Your browser does not support the video tag.
+    </video>
+    <button onclick="document.getElementById('myVideo').play()">Play</button>
+    <button onclick="document.getElementById('myVideo').pause()">Pause</button>
+    <hr />
+
+    <!-- IFRAMES -->
+    <h2><b>IFRAMES</b></h2>
+
+    <iframe
+      src="https://www.youtube.com/embed/Yym0wyKObIY&t=3s"
+      width="600"
+      height="400"
+      loading="lazy"
+    ></iframe>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/Yym0wyKObIY?si=ZdRJTF1k0wPzCIYw"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <hr />
+
+    <!--  SEMANTIC HTML-->
+    <!-- Header Section -->
+    <header>
+      <h2><u>SEMANTIC HTML</u></h2>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+      <article>
+        <header>
+          <h2>Article Title</h2>
+          <p>
+            Published on <time datetime="2024-09-26">September 26, 2024</time>
+          </p>
+        </header>
+        <p>
+          This is the main content of the article. It could be a blog post, news
+          article, or any other content.
+        </p>
+      </article>
+
+      <section>
+        <h2>Related Information</h2>
+        <p>
+          This section contains additional information related to the article
+          above.
+        </p>
+      </section>
+
+      <aside>
+        <h3>Sidebar Information</h3>
+        <p>
+          This sidebar contains tangentially related content, like links or ads.
+        </p>
+        <blockquote>
+          Programming is 10 percent writing code and 90 percent understanding
+          why its not working.
+        </blockquote>
+      </aside>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 My Website</p>
+      <p>Contact: <a href="mailto:info@mywebsite.com">info@mywebsite.com</a></p>
+    </footer>
+    <hr />
+
+    <!-- DIVS -->
+
+    <div class="footer"></div>
+
+    <!-- Forms <form> -->
+    <h2><u>FORMS</u></h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+
+      <label for="name">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <label for="name">Password:</label>
+      <input type="password" id="password" name="password" /><br /><br />
+
+      <label for="name">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br /><br />
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="usa">UK</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+    <hr />
+
+    <!-- TABLES -->
+    <h2><u>TABLES</u></h2>
+    <table border="1">
+      <!-- Table Header -->
+      <caption>
+        Example Table
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th>Age</th>
+          <th>Occupation</th>
+        </tr>
+      </thead>
+
+      <!-- Table Body -->
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>28</td>
+          <td>Software Developer</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>34</td>
+          <td>Graphic Designer</td>
+        </tr>
+        <tr>
+          <td>Emily Johnson</td>
+          <td>45</td>
+          <td>Project Manager</td>
+        </tr>
+      </tbody>
+
+      <!-- Table Footer (Optional) -->
+      <tfoot>
+        <tr>
+          <td colspan="3">End of Table</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <br />
+
+    <table border="1">
+      <caption>
+        HTML Table
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Day</th>
+          <th scope="col">Food</th>
+          <th scope="col">Cost</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">Sunday</th>
+          <td>Sandwich</td>
+          <td>$10</td>
+        </tr>
+        <tr>
+          <th scope="row">Monday</th>
+          <td>Pizza</td>
+          <td>$15</td>
+        </tr>
+        <tr>
+          <th scope="row">Tuesday</th>
+          <td>Salad</td>
+          <td>$10</td>
+        </tr>
+        <tr>
+          <th scope="row">Wednesday</th>
+          <td>Burger</td>
+          <td>$10</td>
+        </tr>
+        <tr>
+          <th scope="row">Thursday</th>
+          <td>Hot Dog</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <th scope="row">Friday</th>
+          <td>Steak</td>
+          <td>$20</td>
+        </tr>
+        <tr>
+          <th scope="row">Saturday</th>
+          <td>Burrito</td>
+          <td>$10</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <th colspan="2">Total Cost</th>
+          <td>$75</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- SCRIPT-->
+    <script src="script.js"></script>
+  </body>
+</html>
